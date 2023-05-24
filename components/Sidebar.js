@@ -1,5 +1,5 @@
 import { Chat, MoreVert, Search } from "@mui/icons-material";
-import { Avatar, IconButton } from "@mui/material";
+import { Avatar, Button, IconButton } from "@mui/material";
 import React from "react";
 
 const Sidebar = () => {
@@ -20,10 +20,21 @@ const Sidebar = () => {
         </div>
       </div>
       {/* SEARCH */}
-      <div className="flex  items-center p-[5px] border-2 ">
+      <div className="flex  items-center p-[20px] rounded-[2px] ">
         <Search />
-        <input type="text" placeholder="Search in chats" className="outline border-none outline-none flex-1"/>
+        <input
+          type="text"
+          placeholder="Search in chats"
+          className="outline border-none outline-none flex-1"
+        />
       </div>
+
+      {/* BUTTON */}
+      <Button className="w-full text-black bg-gray-300">
+        Start a new chat
+      </Button>
+
+      {/*  LIST OF CHATS */}
     </div>
   );
 };
