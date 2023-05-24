@@ -5,8 +5,8 @@ import React from "react";
 const Sidebar = () => {
   return (
     <div>
-      <div className="flex">
-        <Avatar />
+      <div className="flex sticky top-0 bg-white  justify-between z-10 items-center p-4 h-[80px] border-b border-[whitesmoke]">
+        <Avatar  className="cursor-pointer hover:opacity-[0.8]"/>
         <div>
           <IconButton>
             {" "}
